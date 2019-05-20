@@ -121,8 +121,8 @@ footer {
 }
 
 .intro .image {
-  height: 50vw;
-  width: 50vw;
+  min-height: 50vw;
+  min-width: 50vw;
   background-color: #00152b;
   display: flex;
   align-items: center;
@@ -366,8 +366,7 @@ footer small a {
 @media screen and (max-width: 900px) {
   .intro img {
     display: block;
-    height: 100%;
-    width: 40vw;
+    width: 50vw;
     object-fit: cover;
   }
 
