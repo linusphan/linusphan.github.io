@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Linus Phan | Software Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,900" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="assets/images/logo.png" />
+    <link rel="stylesheet" href="assets/styles/reset.css" />
+    <link rel="stylesheet" href="assets/styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Linus Phan</h1>
+      <nav>
+        <a class="email" href="mailto:phanlinus@gmail.com"></a>
+        <a class="linkedin" href="https://www.linkedin.com/in/linus-phan/" target="_blank"></a>
+        <a class="github" href="https://www.linkedin.com/in/linus-phan/" target="_blank"></a>
+      </nav>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="image">
+          <img src="assets/images/portrait.jpeg" />
+        </div>
+        <article>
+          <div class="box">
+            <h2>Hello, I'm Linus.</h2>
+            <p>I am a software engineer based in Los Angeles, CA.</p>
+            <p>I have a strong grasp on programming fundamentals, as well as experience in web application development, Ruby, Ruby on Rails, JavaScript, Node.js, and React. Additionally, I recently built <a href="https://mashr-framework.github.io/" target="_blank">Mashr</a>, which is an open source easy-to-use data pipeline orchestration and monitoring framework for small applications.</p>
+            <p><a href="/#more">More about me</a></p>
+          </div>
+        </article>
+      </section>
+      <section class="light" id="project">
+        <article>
+          <div class="box">
+            <h4>// Recent Project</h4>
+
+            <img class="mobile" src="assets/images/mashr_deploy.gif" />
+
+            <h2>Mashr</h2>
+            <p><a href="https://mashr-framework.github.io/" target="_blank">Mashr</a> is an easy-to-use data pipeline framework that orchestrates moving data from external sources into a single destination database. It’s meant for small software applications who have their data spread out in a variety of external sources which they want to be able to aggregate and perform analysis on.</p>
+            <p>Mashr works by launching a data pipeline in the cloud with archiving, failover, and monitoring infrastructure out of the box. With the command `mashr deploy` and configuration file, a user can get started integrating different sources of data (from REST api's, psql databases, and more) into a single destination database for analysis. It uses Google Cloud Storage for backup and failover, Google Cloud Functions for loading data into BigQuery, and GCE instances hosting Embulk for plugin based bulk data loading. Mashr provides an easy to use CLI, is built with Node.js and uses Docker to host Embulk on the GCE instances.</p>
+            <a href="https://mashr-framework.github.io/" target="_blank">
+              <button>View case study</button>
+            </a>
+          </div>
+        </article>
+        <div id="app">
+          <img src="assets/images/mashr_deploy.gif" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <article id="more">
+        <div class="box">
+          <h2>More About Me</h2>
+          <p>I am a full-stack developer with experience and knowledge on programming in both front-end and back-end. Some of the various technologies that I am proficient in using include: <b>Ruby</b>, <b>JavaScript</b>, and <b>React</b>. In addition, with strong programming fundamentals I am confident of picking up any needed technologies to complete a given technical challenge.</p>
+          <p>For a fun fact, I also love hiking and nature!</p>
+        </div>
+      </article>
+      <article id="info">
+        <div class="box">
+          <h2>Linus Phan</h2>
+          <h4>// Los Angeles, CA</h4>
+          <h2>Let's Connect</h2>
+          <p><a href="mailto:phanlinus@gmail.com">phanlinus@gmail.com</a></p>
+          <nav>
+            <a class="linkedin" href="https://www.linkedin.com/in/linus-phan/" target="_blank"></a>
+            <a class="github" href="https://www.linkedin.com/in/linus-phan/" target="_blank"></a>
+          </nav>
+        </div>
+      </article>
+    </footer>
+  </body>
+</html>
