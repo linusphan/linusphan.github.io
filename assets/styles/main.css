@@ -120,10 +120,13 @@ footer {
   display: flex;
 }
 
+.intro {
+  background-color: #003c67;
+}
+
 .intro .image {
   min-height: 50vw;
   min-width: 50vw;
-  background-color: #00152b;
   display: flex;
   align-items: center;
 }
@@ -131,8 +134,8 @@ footer {
 .intro img {
   display: block;
   margin: 0 auto;
-  border-radius: 20px;
-  border: 5px solid #242424;
+  border-radius: 100%;
+  border: 1px solid #233f6b;
 }
 
 h2 img {
@@ -147,10 +150,6 @@ footer article {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-main article {
-  background-color: #003c67;
 }
 
 footer article {
@@ -181,7 +180,7 @@ button:hover {
 .light article,
 .light button {
   color: #030c15;
-  background-color: #c3c3c3;
+  background-color: #f9f4f0;
 }
 
 .light button {
