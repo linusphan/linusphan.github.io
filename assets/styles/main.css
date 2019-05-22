@@ -565,7 +565,9 @@ footer small a {
     width: 70%;
   }
 
-  header > nav {
+  header > nav a.email,
+  header > nav a.linkedin,
+  header > nav a.github {
     display: none;
   }
 
