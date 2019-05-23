@@ -164,4 +164,40 @@
       </article>
     </footer>
   </body>
+
+  <script>
+    const $ = (element) => document.querySelector(element);
+    const tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    const firstScriptTag = $('script');
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    let player = null;
+
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '100%',
+        width: '100%',
+        videoId: 'FbaqWPCGg9w',
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+
+    function onPlayerReady(event) { } 
+    // needs to be defined in global scope
+
+    function onPlayerStateChange(event) {
+      const state = YT.PlayerState;
+      // if ([state.UNSTARTED, state.PLAYING].includes(event.data)) {
+      //   $('#presentation article').classList.add('hidden');
+      // }
+      // if (event.data === state.PAUSED) {
+      //   $('#presentation article').classList.remove('hidden');
+      // }
+    }
+  </script>
 </html>
