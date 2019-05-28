@@ -44,29 +44,16 @@ nav a:first-of-type {
   margin-left: 0;
 }
 
-nav a:hover {
-  filter: contrast(50%);
-}
-
-a.mashr-icon {
+a.mashr-icon,
+a.resume-icon {
   width: 35px;
   height: 35px;
   border-radius: 100%;
-  background: #030b14;
-  filter: invert(100%);
+  background: #fcf4ea;
 }
 
-a.mashr-icon img {
-  background: transparent;
-  filter: invert(100%);
-}
-
-nav a.mashr-icon:hover {
-  filter: contrast(50%);
-}
-
-nav a.mashr-icon:hover img {
-  filter: contrast(100%)
+a.resume-icon img {
+  width: 35px;
 }
 
 a.email {
@@ -83,6 +70,23 @@ a.linkedin {
 a.github {
   background-image: url("../images/github.png");
   filter: invert(100%);
+}
+
+
+nav a.email:hover,
+nav a.linkedin:hover,
+nav a.github:hover {
+  filter: contrast(50%);
+}
+
+nav a.mashr-icon:hover,
+nav a.resume-icon:hover {
+  background-color: #41454a;
+}
+
+nav a.mashr-icon:hover img,
+nav a.resume-icon:hover img {
+  filter: contrast(75%);
 }
 
 /* Main */
@@ -565,6 +569,7 @@ footer small a {
     width: 70%;
   }
 
+  header > nav a.resume-icon,
   header > nav a.email,
   header > nav a.linkedin,
   header > nav a.github {
