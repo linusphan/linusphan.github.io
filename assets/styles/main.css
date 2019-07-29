@@ -169,9 +169,8 @@ footer {
 
 .intro img {
   display: block;
-  border-radius: 100%;
-  border: 1px solid #233f6b;
-  height: 30vw;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 30vw;
 }
 
